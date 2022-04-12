@@ -53,14 +53,14 @@ body {
 }
 
 .value_container {
-    width: 108px;
+    width: 115px;
     height: 235px;
     /*border: 1px solid black;*/
     margin: 19px 41px 14px 40px;
 }
 
 .value_container p {
-    width: 107px;
+    /*width: 13px;*/
     height: 27px;
     font-style: normal;
     font-weight: 400;
