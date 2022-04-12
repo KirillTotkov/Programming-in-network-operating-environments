@@ -9,7 +9,8 @@ body {
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    vertical-align: top;
 }
 
 .header {
@@ -29,14 +30,22 @@ body {
     position: absolute;
     width: 1170px;
     height: 606px;
-    left: 215px;
-    top: 105px;
-    margin: 0 auto;
+    /*left: 215px;
+    top: 105px;*/
+    /*margin: 0 auto;*/
     /*border: 1px solid #C4C4C4;*/
+    margin: 44px 215px 35px 215px;
+
 }
 
+.table > div {
+    width: 1169px;
+    height: 268px;
+    margin-bottom: 70px;
+}
 
-/*.top {
+/*
+.top {
     !*position: absolute;*!
     width: 1169px;
     height: 268px;
@@ -44,20 +53,43 @@ body {
     !*margin: 44px 215px 70px 216px;*!
     !*border: 1px solid #C4C4C4;*!
 
-}*/
+}
+*/
 
 .box {
+    vertical-align: top;
     display: inline-block;
     width: 188px;
     height: 268px;
-    margin: 0 98px 70px 0;
     background-color: #C4C4C4;
     border-radius: 15px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.box:not(:nth-child(4)) {
+    margin: 0 99px 0 0;
 }
 
 /*
 .bottom {
     width: 1169px;
     height: 268px;
-}*/
+}
+*/
+
+.value_container {
+    width: 108px;
+    height: 235px;
+    /*border: 1px solid black;*/
+    margin: 19px 41px 14px 40px;
+}
+
+.value_container p {
+    width: 107px;
+    height: 27px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 3px 0;
+}
