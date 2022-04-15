@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 30px;
+    text-align: left;
+    background-color: #303b44;
+    height: 60px;
+    color: white;
+    padding: 16px;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+}
+
+.menu {
+    padding: 40px 50px;
+    line-height: 1.5;
+    width: 300px;
+    height: 595px;
+    border-right-style: solid;
+    border-right-width: 1pt
+
+}
+
+.name_list {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}

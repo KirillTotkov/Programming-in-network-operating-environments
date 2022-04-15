@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    font-size: 30px;
+    text-align: left;
+    background-color: #303b44;
+    height: 60px;
+    color: white;
+    padding: 16px;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1170px;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.data {
+    background-color: #fff;
+    border-bottom: 4px solid #eaeaea;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 16px;
+}
