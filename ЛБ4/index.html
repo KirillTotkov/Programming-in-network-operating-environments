@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>Решение биквадратных уравнений</header>
+
+<div class="container">
+    <div class="calculator">
+        <div class="calculator_input">
+            <form class="form-inline" id="calculator-4">
+                <label for="calculator-4">Введите значения:</label>
+                <input type="number" class="input-text" id="a" placeholder="a" value="" maxlength="4">x
+                <sup>4</sup> +
+                <input type="number" class="input-text" id="b" placeholder="b" value="" maxlength="4">x
+                <sup>2</sup>+
+                <input type="number" class="input-text" id="c" placeholder="c" value="" maxlength="4">= 0
+
+                <div class="calculate_btn">
+                    <button type="button" class="btn calc" id="calc">
+                        <span>Посчитать</span>
+                    </button>
+                    <br>
+                    <button type="button" class="btn clear" id="clear">
+                        <span>Очистить поля</span>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="output_answer">
+            <p>Ответ: </p>
+            <div class="output_answer_area">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

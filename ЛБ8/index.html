@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ЛБ8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<form name="test" method="post">
+    <label class="input-label">
+        <span class="input-title">Имя:</span>
+        <input class="input" type="text" size="40">
+    </label>
+
+    <label class="input-label">
+        <span class="input-title">Адресс:</span>
+        <input class="input" type="text" size="40">
+    </label>
+
+    <fieldset class="radio-set">
+        <span class="radio-legend">Пол:</span>
+        <div class="radio-container">
+            <label class="radio-label">
+                <input class="radio" type="radio" name="browser" value="ie" id="ie">
+                <span class="radio-title">М</span>
+            </label>
+            <label class="radio-label">
+                <input class="radio" type="radio" name="browser" value="opera" id="opera">
+                <span class="radio-title">Ж</span>
+            </label>
+        </div>
+    </fieldset>
+
+    <div class="select-div">
+        <label class="select-label" for="specialization_select">Специальность:</label>
+        <div class="select-wrapper">
+            <select class="select" name="city" id="specialization_select">
+                <option value="">-- Выберите город --</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="samara">Самара</option>
+                <option value="perm">Пермь</option>
+                <option value="novosibirsk">Новосибирск</option>
+            </select>
+        </div>
+    </div>
+
+    <fieldset class="checkbox_set">
+        <span class="checkbox-legend">Языки:</span>
+        <div class="select-lang">
+            <input type="checkbox" id="eng">
+            <label class="checkbox-title" for="eng">Английский</label>
+
+            <input type="checkbox" id="de">
+            <label class="checkbox-title" for="de">Немецкий</label>
+
+            <input type="checkbox" id="fr">
+            <label class="checkbox-title" for="fr">Французский</label>
+        </div>
+    </fieldset>
+
+    <label class="input-label">
+        <span class="input-title">Дополнительная информация:</span>
+        <textarea class="input input-textarea" placeholder="Сведения о предыдущем месте работы" name="comment" cols="40" rows="3"></textarea>
+    </label>
+
+    <div class="buttons">
+        <input type="reset" value="Очистить" class="button button-blue">
+        <input type="submit" value="Отправить" class="button button-orange">
+    </div>
+</form>
+
+
+</body>
+</html>

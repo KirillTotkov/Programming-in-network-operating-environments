@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.woff2") format("woff2")
+}
+
+body {
+    height: 100%;
+    background-color: #FCF5F3;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    vertical-align: top;
+}
+
+header {
+    /*margin: 12px 575px 56px 567px;*/
+    margin: 0 auto;
+    padding-top: 12px;
+    width: 793px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.container {
+    width: 1300px;
+    /*margin: auto;*/
+    /*background-color: #0aff00;*/
+    margin: 40px 0 35px 128px;
+}
+
+.calculator {
+    font-size: 40px;
+}
+
+.calculator_input {
+    margin: 20px 0 30px;
+    display: flex;
+
+}
+
+form {
+    display: inline-flex;
+}
+
+label {
+    margin: 0 30px 0 0;
+}
+
+
+input {
+    outline: none;
+    padding: 3px 8px 5px 8px;
+    margin: 0 5px;
+    width: 80px;
+    height: 46px;
+    font-size: 40px;
+    color: #2B2B2B;
+    border: 1px solid #DDD;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.btn {
+    width: 217px;
+    height: 50px;
+    font-size: 40px;
+    margin-left: 50px;
+    background-color: #45ffc5;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.output_answer {
+    display: flex;
+}
+
+.output_answer_area {
+    margin: 0 0 0 30px;
+}
+
+.calculator_btn {
+    margin-left: 70px;
+}
+
+.clear {
+    width: 300px;
+    text-align: left;
+}
