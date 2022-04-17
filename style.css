@@ -1,16 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
     font-family: Montserrat;
-    src: url("../fonts/Montserrat.woff2") format("woff2")
+    src: url("/ЛБ7/fonts/Montserrat.woff2") format("woff2")
 }
 
 body {
     height: 100%;
-    background-color: pink;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
     vertical-align: top;
@@ -28,19 +28,6 @@ header {
     margin-bottom: 20px;
 }
 
-h1 {
-    text-align: center;
-}
-
-span {
-
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1170px;
-    margin: auto;
-    padding: 25px 0 35px 0;
-    justify-content: space-between;
+a{
+    font-size: 40px;
 }
