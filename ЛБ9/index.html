@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛБ9</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>Решение СЛАУ методом Крамера</header>
+
+<div class="calculator">
+    <form class="select-container" name="choice">
+        <label for="select_count" class="select-label">Выберите количество неизвестных:</label>
+        <div class="select-wrapper">
+            <select name="count" id="select_count">
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+<div class="calculate_btn">
+    <button type="button" class="btn calc" id="calc">
+        <span>Посчитать</span>
+    </button>
+
+    <button type="button" class="btn clear" id="clear">
+        <span>Очистить поля</span>
+    </button>
+
+    <div class="output_answer">
+        <p>Ответ: </p>
+        <div class="output_answer_area">
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+<script src="js/calc_matrix.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

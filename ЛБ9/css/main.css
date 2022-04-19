@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.woff2") format("woff2")
+}
+
+body {
+    height: 100%;
+    background-color: #FCF5F3;
+    font-family: Montserrat, sans-serif;
+    vertical-align: top;
+    font-size: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.calculator {
+    /*display: flex;*/
+    /*justify-content: left;*/
+    /*font-size: 35px;*/
+    margin: 40px 0 0 30px;
+}
+
+.braces {
+    position: relative;
+    padding: .3em .5em;
+    margin-left: 1em;
+}
+
+.braces::before,
+.braces::after,
+.curly::before,
+.curly::after {
+    content: "";
+    position: absolute;
+    width: .8em;
+    height: 25%;
+}
+
+.braces::before,
+.braces::after {
+    left: 0;
+    border-left: 2px solid;
+}
+
+.braces::before {
+    top: 0;
+    border-top-left-radius: .8em;
+}
+
+.braces::after {
+    bottom: 0;
+    border-bottom-left-radius: .8em;
+}
+
+.curly::before,
+.curly::after {
+    left: -.8em;
+    border-right: 2px solid;
+}
+
+.curly::before {
+    top: 25%;
+    border-bottom-right-radius: .8em;
+}
+
+.curly::after {
+    bottom: 25%;
+    border-top-right-radius: .8em;
+}
+
+input {
+    /*outline: none;*/
+    padding: 3px 8px 5px 8px;
+    margin: 0 5px;
+    width: 80px;
+    height: 46px;
+    font-size: 40px;
+    color: #2B2B2B;
+    border: 1px solid #DDD;
+}
+
+.input:focus {
+    border-color: #FF8630;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.calculate_btn {
+    width: 650px;
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    margin: 40px 0 20px 50px;
+}
+
+.btn {
+    width: 217px;
+    height: 50px;
+    font-size: 40px;
+    margin-right: 20px;
+    /*margin-left: 50px;*/
+    background-color: #45ffc5;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.output_answer {
+    display: flex;
+
+}
+
+.output_answer_area {
+    margin: 0 0 0 30px;
+}
+
+
+.clear {
+    width: 300px;
+    text-align: left;
+}
+
+.add_row {
+    width: 340px;
+}
+
+.output {
+    width: 130px;
+}
+
+.select-container {
+    /*width: 650px;*/
+    display: flex;
+}
+
+.select-label {
+    margin-right: 35px;
+    /*padding: 10px 0;*/
+    /*flex-grow: 1;*/
+    /*line-height: 1;*/
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+select {
+    position: relative;
+    width: 100px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background-color: #45ffc5;
+    font-family: inherit;
+    font-size: inherit;
+    /*font-weight: 300;*/
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
