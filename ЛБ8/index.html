@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <title>ЛБ8</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -49,28 +48,36 @@
     <fieldset class="checkbox_set">
         <span class="checkbox-legend">Языки:</span>
         <div class="select-lang">
-            <input type="checkbox" id="eng">
-            <label class="checkbox-title" for="eng">Английский</label>
+            <label class="checkbox-label" for="eng">
+                <input class="checkbox"  type="checkbox" id="eng">
+                <span class="checkbox-title">Английский</span>
+            </label>
 
-            <input type="checkbox" id="de">
-            <label class="checkbox-title" for="de">Немецкий</label>
+            <label class="checkbox-label" for="de">
+                <input class="checkbox"  type="checkbox" id="de">
+                <span class="checkbox-title">Немецкий</span>
+            </label>
 
-            <input type="checkbox" id="fr">
-            <label class="checkbox-title" for="fr">Французский</label>
+            <label class="checkbox-label" for="fr">
+                <input class="checkbox" type="checkbox" id="fr">
+                <span class="checkbox-title">Французский</span>
+            </label>
         </div>
     </fieldset>
 
     <label class="input-label">
         <span class="input-title">Дополнительная информация:</span>
-        <textarea class="input input-textarea" placeholder="Сведения о предыдущем месте работы" name="comment" cols="40" rows="3"></textarea>
+        <textarea class="input input-textarea" placeholder="Сведения о предыдущем месте работы" name="comment" cols="40"
+                  rows="3"></textarea>
     </label>
 
     <div class="buttons">
         <input type="reset" value="Очистить" class="button button-blue">
         <input type="submit" value="Отправить" class="button button-orange">
     </div>
+
 </form>
 
-
+<script src="js/main.js"></script>
 </body>
 </html>
