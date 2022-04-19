@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url("/ЛБ7/fonts/Montserrat.woff2") format("woff2")
-}
-
 body {
     height: 100%;
     box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     vertical-align: top;
+    /*background: #38444C;*/
+    background: #121212;
+    color: white;
+    line-height: 1.7;
 }
 
 header {
@@ -24,10 +24,37 @@ header {
     font-weight: 800;
     font-size: 40px;
     line-height: 49px;
-    color: #000000;
     margin-bottom: 20px;
 }
 
-a{
-    font-size: 40px;
+.all_works {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.box {
+    width: 188px;
+    height: 268px;
+    border-radius: 15px;
+    margin: 30px 0 0 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), #121212;
+    box-shadow: 0 24px 38px rgba(0, 0, 0, 0.14), 0 9px 46px rgba(0, 0, 0, 0.12), 0 11px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px 0 0 60px;
+}
+
+.box:not(:nth-child(4n)) {
+    margin: 30px 99px 0 0;
+}
+
+span {
+    justify-content: center;
+    font-size: 96px;
+}
+
+.box:hover {
+    background-color: #333333;
+    transition: background-color 0.1s linear;
 }
