@@ -1,13 +1,10 @@
+function printAnswer(applicantForm,name) {
+    applicantForm.style.display = 'none'
 
-function printAnswer(applicantForm){
-    applicantForm.style.display='none'
-
-    let printBloc=document.createElement('div')
-    printBloc.className='printBlock'
-
-    let nameElem=document.querySelector('.answer_text')
-    const name="Иван Иваннов"
-    nameElem.innerHTML=`${name}, благодарим за заполнение анкеты`
+    let printBloc = document.createElement('div')
+    printBloc.className = 'printBlock'
+    printBloc.innerHTML = `<span>${name}, благодарим за заполнение анкеты</span>`
+    document.body.prepend(printBloc)
 }
 
 function checkValidity(event) {
@@ -24,11 +21,12 @@ function onSuccess(formNode) {
 function handleFormSubmit(event) {
     event.preventDefault()
     let formData = new FormData(applicantForm)
+    let name=Array.from(formData)[0][1]
     console.log(Array.from(formData));
 
     onSuccess(applicantForm)
 
-    printAnswer(applicantForm)
+    printAnswer(applicantForm,name)
 }
 
 
