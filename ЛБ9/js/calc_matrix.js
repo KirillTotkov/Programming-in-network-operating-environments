@@ -26,6 +26,10 @@ function calculate(matrix) {
         result.push(det_x / main_det)
     }
 
+    result = result.filter(function (item, pos) {
+        return result.indexOf(item) === pos
+    })
+
     console.log(result);
     return result
 }

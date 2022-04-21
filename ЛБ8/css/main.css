@@ -5,6 +5,7 @@
 }
 
 body {
+    /*padding: 0 50px 50px 50px;*/
     padding: 50px;
     background-color: #18191C;
     color: #FFFFFF;
@@ -12,10 +13,21 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/*header {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 20px 0 35px 0;
+}*/
+
 form {
     width: 800px;
     margin: auto;
 }
+
 
 .buttons {
     display: flex;
@@ -55,6 +67,15 @@ form {
 
 .button-blue {
     background-color: #2E9AFF;
+}
+
+.button-yellow {
+    background-color: #FFD829;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .input-label, .radio-set, .select-div, .checkbox_set {
@@ -113,7 +134,7 @@ form {
     margin-bottom: 10px;
 }
 
-.radio-title, .checkbox-label{
+.radio-title, .checkbox-label {
     font-size: inherit;
 }
 
@@ -192,7 +213,7 @@ form {
     appearance: none;
 }
 
-.checkbox-label{
+.checkbox-label {
     position: relative;
     display: flex;
     /*flex-direction: row-reverse;*/
@@ -282,3 +303,14 @@ form {
     display: block;
 }
 
+.printBlock {
+    justify-content: center;
+    width: 800px;
+    height: 300px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), #121212;
+    box-shadow: 0 24px 38px rgba(0, 0, 0, 0.14), 0 9px 46px rgba(0, 0, 0, 0.12), 0 11px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 40px 0 0 60px;
+    font-size: 40px;
+}

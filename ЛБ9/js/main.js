@@ -1,6 +1,12 @@
+let ans_area = document.querySelector(".output_answer_area")
 paint_matrix(3)
 
+function removeAns_area() {
+    ans_area.innerHTML = ''
+}
+
 function paint_matrix(countEquations) {
+    removeAns_area(ans_area)
     let calculatorElem = document.querySelector(".calculator")
     let bracesElem = document.createElement("div")
     bracesElem.className = "braces"
@@ -39,14 +45,18 @@ document.getElementById("calc").onclick = function () {
         let span_input = spanElems[i].querySelectorAll("input")
         let temp = []
         for (let j = 0; j < span_input.length; ++j) {
-            temp.push(Number(span_input[j].value))
+            let val = span_input[j].value
+            if (val === "") {
+                val = "1"
+            }
+            temp.push(Number(val))
         }
         matrix.push(temp)
     }
     console.log(matrix);
     let answer = calculate(matrix);
 
-    let ans_area = document.querySelector(".output_answer_area")
+    removeAns_area(ans_area)
     if (typeof answer !== 'undefined') {
         for (let i = 0; i < answer.length; ++i) {
             ans_area.innerHTML += `${answer[i]}; `
@@ -59,6 +69,7 @@ document.getElementById("calc").onclick = function () {
 
 document.getElementById("clear").onclick = function () {
     let inputElems = document.getElementsByClassName("input-text")
+    removeAns_area(ans_area)
     for (let i = 0; i < inputElems.length; ++i) {
         inputElems[i].value = ""
     }
