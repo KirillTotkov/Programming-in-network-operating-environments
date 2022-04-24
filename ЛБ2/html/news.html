@@ -2,42 +2,92 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>News</title>
+    <title>Новости</title>
     <link rel="stylesheet" href="../styles/news.css">
 </head>
 <body>
-
 <header>Новости</header>
 
+
 <div class="content">
+    <!--<table>
+        <tr>
+            <td class="button">
+                <span>Новости</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="button">
+                <span>Расписание</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="button">
+                <span>Фотоальбом</span>
+            </td>
+        </tr>
 
+    </table>-->
 
-    <div class="data">
-        <p class="date"><a href="#30_03_22">30 марта 2022</a></p>
-        <p><a href="#16_03_22">16 марта 2022</a></p>
-        <p><a href="#10_03_22">10 марта 2022</a></p>
-        <p><a href="#02_03_22">2 марта 2022</a></p>
-    </div>
+    <nav class="menu">
+        <ol>
+            <li class="menu_item button"><a href="./news.html" target="_blank">Новости</a></li>
+            <li class="menu_item button"><a href="./schedule.html" target="_blank">Расписание</a></li>
+            <li class="menu_item button"><a href="./album.html" target="_blank">Фотоальбом</a></li>
+        </ol>
+    </nav>
 
-    <div>
-        <p class="data" id="30_03_22">
-            <span style="color: rosybrown">30 марта 2022</span><br>
-            <span style="margin-left: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-        </p>
-        <p class="data" id="16_03_22">
-            <span style="color: rosybrown">16 марта 2022</span><br>
-            <span style="margin-left: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-        </p>
-        <p class="data" id="10_03_22">
-            <span style="color: rosybrown">10 марта 2022</span><br>
-            <span style="margin-left: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-        </p>
-        <p class="data" id="02_03_22">
-            <span style="color: rosybrown">02 марта 2022</span><br>
-            <span style="margin-left: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-        </p>
+    <div class="main">
+        <div class="allDate">
+            <a href="#30_03_22">30 марта 2022</a>
+            <a href="#16_03_22">16 марта 2022</a>
+            <a href="#10_03_22">10 марта 2022</a>
+            <a href="#02_03_22">2 марта 2022</a>
+            <a href="#25_02_22">25 февраля 2022</a>
+            <a href="#20_02_22">20 февраля 2022</a>
+            <a href="#03_02_22">3 февраля 2022</a>
+        </div>
 
+        <div class="allNews">
+            <div class="news" id="30_03_22">
+                <span class="date">30 марта 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="news" id="16_03_22">
+                <span class="date">16 марта 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="news" id="10_03_22">
+                <span class="date">10 марта 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="news" id="02_03_22">
+                <span class="date">02 марта 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="news" id="25_02_22">
+                <span class="date">25 февраля 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="news" id="20_02_22">
+                <span class="date">20 февраля 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+            <div class="news" id="03_02_22">
+                <span class="date">3 февраля 2022</span><br>
+                <span class="text_news">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            </div>
+
+        </div>
     </div>
 </div>
+
+<script src="../script/button.js"></script>
 </body>
 </html>

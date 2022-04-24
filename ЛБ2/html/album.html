@@ -2,23 +2,46 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Albom</title>
+    <title>Фотоальбом</title>
     <link rel="stylesheet" href="../styles/album.css">
+
 </head>
 <body>
+<header>Фотоальбом</header>
 
-<header>
-    Фотоальбом
-</header>
+<div class="content">
+    <nav class="menu">
+        <ul>
+            <li class="menu_item button"><a href="./news.html" target="_blank">Новости</a></li>
+            <li class="menu_item button"><a href="./schedule.html" target="_blank">Расписание</a></li>
+            <li class="menu_item button"><a href="./album.html" target="_blank">Фотоальбом</a></li>
+        </ul>
+    </nav>
 
-<nav class="menu">
-    <u  class="name_list">
-        <li>Алексеев В. Л.</li>
-        <li>Васильева С. М.</li>
-    </u>
+    <div class="main">
+        <nav class="menu_name">
+            <ul>
+                <li class="menu_name_item">Алексеев В. Л.</li>
+                <li class="menu_name_item">Васильева С. М.</li>
+                <li class="menu_name_item">Голубева Е. В.</li>
+                <li class="menu_name_item">Зайцев В. Е.</li>
+                <li class="menu_name_item">Калинина Д. Д.</li>
+                <li class="menu_name_item">Киселев К. А.</li>
+                <li class="menu_name_item">Макарова К. М.</li>
+                <li class="menu_name_item">Никитина Е. Д.</li>
+                <li class="menu_name_item">Пименов Д. А.</li>
+                <li class="menu_name_item">Смирнов Н. Г.</li>
+            </ul>
+        </nav>
 
+        <div class="gallery">
+            <img src="../images/photo_album/Алексеев%20В.%20Л..jpg" id="photo" alt="">
+        </div>
+    </div>
 
-</nav>
+</div>
 
+<script src="../script/button.js"></script>
+<script src="../script/gallery.js"></script>
 </body>
 </html>

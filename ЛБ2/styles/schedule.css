@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     /*box-sizing: border-box;*/
     font-family: Roboto, sans-serif;
 }
 
-table,tbody {
+table, tbody {
     border-collapse: collapse;
     /*margin-left: 5px;*/
     /*margin-top: 15px;*/
@@ -52,33 +52,26 @@ td {
     height: 40px;
 }
 
-
 .button {
     width: 74pt;
     height: 20pt;
     text-align: left;
+    cursor: pointer;
+
 }
 
-.button a{
+span {
     width: 120px;
     display: inline-block;
-    background: #2196f3;
-    color: #fff;
+    color: black;
     padding: 12px;
-    border-radius: 3px;
     text-decoration: none;
     /*font-family: Tahoma, serif;*/
-    font-size: 18px;
     line-height: 1;
-    font-weight: 100;
+    /*font-weight: 100;*/
 }
 
-
-.button a:hover{
-    background: aquamarine;
-}
-
-.main_text{
+.main_text {
     text-align: left;
     font-size: 18px;
 }

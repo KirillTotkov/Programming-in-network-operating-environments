@@ -1,41 +1,116 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
 
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.woff2") format("woff2")
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
+    height: 100%;
+    background-color: #FCF5F3;
+    font-family: Montserrat, sans-serif;
+    vertical-align: top;
+    font-size: 20px;
 }
 
 header {
-    font-size: 30px;
-    text-align: left;
-    background-color: #303b44;
-    height: 60px;
-    color: white;
-    padding: 16px;
-    align-items: center;
-    box-sizing: border-box;
-    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.content {
+    display: flex;
+    /*margin: 0 auto;*/
+    justify-content: center;
+    /*padding: 40px 50px;*/
+    /*width: 300px;*/
+    /*height: 595px;*/
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+.menu_name {
+    /*padding: 40px 50px;*/
+    padding: 0 0 40px 0;
+    line-height: 1.5;
+    width: 230px;
+    height: 600px;
+    border-right-style: solid;
+    border-right-width: 1pt
+}
+
+.menu_name ul {
+    list-style: none;
+}
+
+.menu_name_item {
+    padding-left: 10px;
+}
+
+.menu_name_item:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.menu_name_item:hover {
+    background-color: #aaff8b;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 600px;
+    margin: 0 0 0 30px;
+}
+
+img {
+    max-width: 100%;
+    height: inherit;
+    flex: 0 0 33.333%;
+    position: relative;
+    min-height: 150px;
 }
 
 .menu {
-    padding: 40px 50px;
-    line-height: 1.5;
-    width: 300px;
-    height: 595px;
-    border-right-style: solid;
-    border-right-width: 1pt
+    font-size: 22px;
+    border-top: 2px solid #FF8630;
+    border-right: 2px solid #FF8630;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    /*margin-right: 15px;*/
 
 }
 
-.name_list {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.menu li:not(:nth-child(1)) {
+    border-top: 2px solid #FF8630;
+}
+
+.menu_item a {
+    position: relative;
+    color: #FF8630;
     text-decoration: none;
+
+    /*transition: background-color 0.2s linear;*/
+}
+
+.menu_item a:hover {
+    border-radius: 3px;
+    background-color: #FF8630;
+    color: #FFFFFF;
+    transition: background-color 0.2s linear;
 }
