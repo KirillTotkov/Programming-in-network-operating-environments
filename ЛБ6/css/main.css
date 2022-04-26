@@ -3,11 +3,88 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.woff2") format("woff2")
+}
+
 body {
     height: 100%;
-    background-color: #FCF5F3;
-    box-sizing: border-box;
+    /*background-color: #FCF5F3;*/
+    background-image: url("../img/background.svg");
+    background-size: cover;
     font-family: Montserrat, sans-serif;
+    vertical-align: top;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    width: 1232px;
+    /*justify-content: center;*/
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    /*line-height: 49px;*/
+    color: #000000;
+    margin: 48px 143px;
+    /*border-bottom: 1px solid black;*/
+
+    line-height: 1;
+    text-transform: uppercase;
+    border-bottom: 0.55rem solid hsl(40, 10%, 20%);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    /*margin: auto;*/
+    margin-inline: auto;
+    padding: 25px 0 35px 0;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
     font-size: 24px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    border-bottom: 0.2rem solid hsl(40, 10%, 10%);
+    text-align: left;
+}
+
+.main {
+    margin: 0 32px 64px 0;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+ul {
+    letter-spacing: 2px;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+}
+
+.list-spacer{
+    margin-right: calc(0.5rem * 1.2);
+    border-bottom: 2px dotted  hsl(333, 90%, 55%);
+    transform: translateY(100%);
+    flex-grow: 1;
+}
+
+.photo {
+
 }
 
