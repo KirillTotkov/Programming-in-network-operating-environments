@@ -311,6 +311,6 @@ form {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), #121212;
     box-shadow: 0 24px 38px rgba(0, 0, 0, 0.14), 0 9px 46px rgba(0, 0, 0, 0.12), 0 11px 15px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    padding: 40px 0 0 60px;
+    padding: 40px 60px 0 60px;
     font-size: 40px;
 }
