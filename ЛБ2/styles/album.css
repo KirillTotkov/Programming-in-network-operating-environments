@@ -114,3 +114,7 @@ img {
     color: #FFFFFF;
     transition: background-color 0.2s linear;
 }
+
+.menu_item{
+    cursor: pointer;
+}
