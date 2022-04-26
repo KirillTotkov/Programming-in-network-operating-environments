@@ -50,6 +50,12 @@ td {
     text-align: left;
 }
 
+.button:hover{
+    background-color: #FF8630;
+    color: #FFFFFF;
+    transition: background-color 0.2s linear;
+}
+
 span {
     width: 120px;
     display: inline-block;
