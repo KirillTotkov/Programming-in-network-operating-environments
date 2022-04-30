@@ -14,7 +14,7 @@ function checkValidity(event) {
 }
 
 function onSuccess(formNode) {
-    alert('Ваша заявка отправлена!')
+    // alert('Ваша заявка отправлена!')
     formNode.classList.toggle('hidden')
 }
 
