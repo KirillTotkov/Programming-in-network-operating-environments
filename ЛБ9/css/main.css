@@ -43,8 +43,8 @@ header {
 
 .braces::before,
 .braces::after,
-.curly::before,
-.curly::after {
+.systemEquations::before,
+.systemEquations::after {
     content: "";
     position: absolute;
     width: .8em;
@@ -67,18 +67,18 @@ header {
     border-bottom-left-radius: .8em;
 }
 
-.curly::before,
-.curly::after {
+.systemEquations::before,
+.systemEquations::after {
     left: -.8em;
     border-right: 2px solid;
 }
 
-.curly::before {
+.systemEquations::before {
     top: 25%;
     border-bottom-right-radius: .8em;
 }
 
-.curly::after {
+.systemEquations::after {
     bottom: 25%;
     border-top-right-radius: .8em;
 }

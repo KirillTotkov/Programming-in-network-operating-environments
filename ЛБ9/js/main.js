@@ -11,11 +11,11 @@ function paint_matrix(countEquations) {
     let bracesElem = document.createElement("div")
     bracesElem.className = "braces"
     let createElem = document.createElement("div")
-    createElem.className = "curly"
+    createElem.className = "systemEquations"
     bracesElem.append(createElem)
     calculatorElem.append(bracesElem)
 
-    let curlyElem = document.querySelector(".curly")
+    let systemEquationsElem = document.querySelector(".systemEquations")
     for (let i = 0; i < countEquations; ++i) {
         let newRow = document.createElement("span")
         newRow.className = "equation"
@@ -25,7 +25,7 @@ function paint_matrix(countEquations) {
 
         }
         newRow.innerHTML += ` = <input type="number" class="input-text s" placeholder="1" maxlength="4"><br>`
-        curlyElem.append(newRow)
+        systemEquationsElem.append(newRow)
     }
 }
 
