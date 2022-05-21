@@ -1,5 +1,34 @@
-let tableElem = document.querySelector('.table')
 
+print_table(9)
+
+function print_table(num){
+    let tableElem = document.querySelector('tbody')
+    for (let i = 0; i < num; ++i) {
+        let new_row = document.createElement('tr')
+        new_row.innerHTML += `<td>${i + 1}</td>`
+
+        for (let j = 1; j < num; ++j) {
+            if (i === 0) {
+                new_row.innerHTML += `<td>${j + 1}</td>`
+            } else {
+                new_row.innerHTML += `<td>${(i+1)*(j+1)}</td>`
+            }
+        }
+        tableElem.appendChild(new_row)
+    }
+}
+
+
+let sel_form = document.forms.choice
+sel_form.count.onchange = function choice() {
+    let num = sel_form.count.value
+    let tableElem = document.querySelector('tbody')
+    tableElem.innerHTML=''
+    console.log(num);
+    print_table(num);
+}
+
+/*
 for (let i = 0; i < 8; ++i) {
     let boxElem=document.createElement('div')
     boxElem.className='box'
@@ -15,3 +44,4 @@ for (let i = 0; i < 8; ++i) {
     boxElem.append(value_cont)
 }
 
+*/
