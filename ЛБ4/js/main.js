@@ -1,34 +1,35 @@
 let ans_area = document.querySelector(".output_answer_area")
 
-function foo(a, b, c) {
-    let d = (b * b - 4 * a * c) ** (0.5);
-    console.log(`d = ${d}`);
+function calculation(a, b, c) {
+    let d = b * b - 4 * a * c
     if (d < 0) {
         ans_area.innerHTML = "корней нет";
         return;
     }
-    let ans = []
-    ans[0] = (-b + d) / (2 * a)
-    ans[1] = (-b - d) / (2 * a);
-    ans = ans.filter(function (x) {
+
+    d = d ** (0.5);
+
+    let result = []
+    result[0] = (-b + d) / (2 * a)
+    result[1] = (-b - d) / (2 * a);
+
+    result = result.filter(function (x) {
         return x >= 0
     })
-
-    if (ans.length === 0) {
+    if (result.length === 0) {
         ans_area.innerHTML = "корней нет";
         return;
     }
-    ans = ans.map((x) => x ** (0.5))
 
-    ans.forEach(function (item) {
-        ans.push(item * (-1))
+    result = result.map(function (x) {
+        return Number((x ** 0.5).toFixed(2));
     })
 
-    ans = ans.filter(function (item, pos) {
-        return ans.indexOf(item) === pos
+    result.forEach(function (item) {
+        result.push(item * (-1))
     })
 
-    return ans
+    return result.sort()
 }
 
 const inputs = document.querySelectorAll('input[type=number]');
@@ -49,21 +50,14 @@ Array.from(inputs).forEach(input => {
 
 document.getElementById("calc").onclick = function () {
     let a = document.querySelector("#a").value
-    if (a === "") {
-        a = "1"
-    }
-    console.log(a);
+    if (a === "") a = 1
     let b = document.querySelector("#b").value
-    if (b === "") {
-        b = "1"
-    }
+    if (b === "") b = 1
     let c = document.querySelector("#c").value
-    if (c === "") {
-        c = "1"
-    }
+    if (c === "") c = 1
+
     ans_area.innerHTML = ''
-    let ans = foo(a, b, c)
-    console.log(ans);
+    let ans = calculation(a, b, c)
     if (typeof ans !== 'undefined') {
         for (let i = 0; i < ans.length; ++i) {
             ans_area.innerHTML += `${ans[i]}; `
