@@ -1,12 +1,12 @@
-let input = document.querySelector('input[name="name"]');
-
-let tmp="";
+let formattedInputValue = ""
 
 function getName(input_name) {
-    return input_name.value.trim().replace(/\w/gi, "")
+    return input_name.value.replace(/\w/gi, "")
 }
 
 function onNameInput(event) {
+
+
     let input = event.target,
         inputNameValue = getName(input),
         formatName = "";
@@ -16,12 +16,11 @@ function onNameInput(event) {
     }
 
     if (event.data && /\w/gi.test(event.data)) {
-        input.value = tmp;
+        input.value = formattedInputValue;
     }
 
-    tmp=inputNameValue;
-
-    console.log("Name: ", tmp);
+    formattedInputValue = inputNameValue;
 }
 
+let input = document.querySelector('input[name="name"]');
 input.addEventListener("input", onNameInput);

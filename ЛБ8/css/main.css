@@ -112,6 +112,7 @@ form {
     max-width: 470px;
     min-height: 100px;
     max-height: 250px;
+    resize: none;
 }
 
 .input, .radio-container, .select-lang {
@@ -282,13 +283,11 @@ form {
     transform: rotate(45deg);
 }
 
-/* Подчеркиваем элемент при наведении курсора */
 .checkbox-label:hover .checkbox + .checkbox-title {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-/* Когда чекбокс активен, меняем цвет текста */
 .checkbox:checked + .checkbox-title {
     color: #2E9AFF;
 }

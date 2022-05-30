@@ -8,16 +8,15 @@
 
 </head>
 <body>
-<!--<header>Анкета</header>-->
 
-<form method="post" id="questionnaire">
+<form name="questionnaire" id="questionnaire">
     <label class="input-label">
         <span class="input-title">Имя:</span>
-        <input name="name" class="input" type="text" size="40" required autofocus>
+        <input name="name" id="name" class="input" type="text" size="40" required autofocus>
     </label>
 
     <label class="input-label">
-        <span class="input-title">Адресс:</span>
+        <span class="input-title">Адрес:</span>
         <input name="address" class="input" type="text" size="40" required>
     </label>
 
@@ -25,21 +24,21 @@
         <span class="radio-legend">Пол:</span>
         <div class="radio-container">
             <label class="radio-label">
-                <input class="radio" type="radio" name="gender" value="М">
+                <input class="radio" type="radio" id="gender_Male" name="gender" value="М">
                 <span class="radio-title">М</span>
             </label>
             <label class="radio-label">
-                <input class="radio" type="radio" name="gender" value="Ж">
+                <input class="radio" type="radio" id="gender_Female" name="gender" value="Ж">
                 <span class="radio-title">Ж</span>
             </label>
         </div>
     </fieldset>
 
     <div class="select-div">
-        <label class="select-label" for="specialization_select">Специальность:</label>
+        <label class="select-label" for="city">Город:</label>
         <div class="select-wrapper">
-            <select class="select" name="specialization" id="specialization_select" required>
-                <option value="">-- Выберите специальность --</option>
+            <select class="select" name="city" id="city" required>
+                <option value="" disabled selected>-- Выберите город --</option>
                 <option value="petersburg">Санкт-Петербург</option>
                 <option value="samara">Самара</option>
                 <option value="perm">Пермь</option>
@@ -52,17 +51,17 @@
         <span class="checkbox-legend">Языки:</span>
         <div class="select-lang">
             <label class="checkbox-label" for="eng">
-                <input name="eng" class="checkbox" type="checkbox" id="eng">
+                <input name="language" class="checkbox" type="checkbox" id="eng">
                 <span class="checkbox-title">Английский</span>
             </label>
 
             <label class="checkbox-label" for="de">
-                <input name="de" class="checkbox" type="checkbox" id="de">
+                <input name="language" class="checkbox" type="checkbox" id="de">
                 <span class="checkbox-title">Немецкий</span>
             </label>
 
             <label class="checkbox-label" for="fr">
-                <input name="fr" class="checkbox" type="checkbox" id="fr">
+                <input name="language" class="checkbox" type="checkbox" id="fr">
                 <span class="checkbox-title">Французский</span>
             </label>
         </div>
@@ -75,14 +74,14 @@
     </label>
 
     <div class="buttons">
-        <input type="reset" value="Очистить" class="button button-blue">
-        <!--        <input type="submit" value="Отправить" class="button button-orange">-->
-        <button class="button button-yellow" type="submit" disabled>Отправить анкету</button>
+        <input type="reset" class="button button-blue">
+        <button class="button button-yellow" type="submit" id="send">Отправить анкету</button>
     </div>
 
 </form>
 
-<script src="js/check.js"></script>
+<script src="js/input_check.js"></script>
 <script src="js/main.js"></script>
+<!--<script src="js/app.js"></script>-->
 </body>
 </html>
