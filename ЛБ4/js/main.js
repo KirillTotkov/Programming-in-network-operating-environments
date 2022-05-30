@@ -29,6 +29,10 @@ function calculation(a, b, c) {
         result.push(item * (-1))
     })
 
+    result = result.filter(function (item, pos) { // удаление дубликатов
+        return result.indexOf(item) === pos;
+    })
+
     return result.sort()
 }
 
